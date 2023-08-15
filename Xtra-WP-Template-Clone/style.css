@@ -485,6 +485,7 @@ small {
     padding: 80px 120px;
     display: flex;
     align-items: center;
+    margin-bottom: -12%;
 }
 
 .contactUs-btn {
@@ -510,33 +511,39 @@ small {
 /* Footer Section */
 
 .logo_footer img {
-    width: 35%;
+    width: 30%;
 }
 
 .footerDetailPara {
-    margin-top: 10%;
+    margin-top: 5%;
+    width: 100%;
+    font-size: 1.3vw;
     color: rgb(123, 124, 124);
 }
 
 .footer_socialMediaIcon {
     background-color: rgb(85, 196, 139);
-    padding: 2%;
-    border-radius: 40%;
+    padding: 5%;
+    border-radius: 50%;
 }
 
 .footer_socialMediaIcon_mainDiv {
     display: flex;
+    width: 60%;
     justify-content: space-evenly;
 }
 
 .footer {
-    padding-top: 20%;
+    padding-bottom: 10%;
+    padding-top: 16%;
     background-color: rgb(229, 242, 245);
 }
 
 .footer_list h4 {
     color: rgb(123, 124, 124);
     font-size: 1.4vw;
+    padding-bottom: 8%;
+    border-bottom: 1px solid black;
     text-align: center;
 }
 
@@ -546,6 +553,7 @@ small {
 
 .footer_list_item li {
     list-style: none;
+    line-height: 35px;
 }
 
 .footer_list_item li a {
@@ -564,16 +572,29 @@ small {
     color: white;
     display: flex;
     background-color: black;
+    padding-bottom: 2%;
     justify-content: space-around;
+    box-sizing: border-box;
+    font-size: 1.2vw;
 }
 
 .lowerSubDiv {
     width: 100%;
+    position: relative;
 
 }
 
 .lowerList {
     display: flex;
+    width: 25%;
+    justify-content: space-between;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+}
+
+.lowerList li {
+    list-style: none;
 }
 
 .lowerList li a {
@@ -583,9 +604,13 @@ small {
 
 .listDiv {
     width: 50%;
+    display: flex;
+    align-items: right;
 }
 
 .copyright {
+    position: relative;
+    top: 50%;
     width: 50%;
-    padding: 45px 0;
+    left: 0%;
 }
