@@ -9,30 +9,38 @@
     box-sizing: border-box;
 }
 
+/* body{
+    overflow-x: hidden !important;
+} */
+
 .container {
     position: relative;
 }
 
 .main {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     width: 100%;
     display: flex;
 }
 
 .background {
-    width: 70%;
+    width: 100%;
     box-sizing: border-box;
 }
 
 .background img {
-    width: 115%;
+    width: 100%;
+    box-sizing: border-box;
     object-fit: contain;
 }
 
 .head {
     width: 40%;
     height: auto;
-    margin-top: 18%;
+    margin-top: 20%;
+    margin-left: 10%;
+    width: 50%;
+    /* padding-left: 10%; */
 }
 
 .head h5 {
@@ -43,7 +51,7 @@
 .head h2 {
     font-weight: 670;
     width: 100%;
-    font-size: xx-large;
+    font-size: 2.3vw;
 }
 
 .head h2 span {
@@ -52,8 +60,14 @@
     color: rgb(0, 132, 255);
 }
 
+.logo_achar {
+    /* background-color: yellow; */
+    width: 20%;
+}
+
 .logo_achar img {
-    width: 25%;
+    /* background-color: red; */
+    width: 60%;
 }
 
 .btn_consultaton {
@@ -88,16 +102,30 @@
     transition: all 0.5s;
 }
 
+.mainBodyDiv {
+    width: 100%;
+    /* background-color: red; */
+}
+
 .navbar {
     position: absolute;
     top: 3%;
+    background-color: red;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    /* left: 5%;
+    right: 5%; */
+    box-sizing: border-box;
     border-radius: 70px;
-    width: 88%;
+    width: 100%;
     box-shadow: 0px 8px 48px 0px rgba(58, 58, 58, 0.12);
 }
 
 .btn_works {
     background-color: white !important;
+    margin-top: 6%;
     color: rgb(7, 218, 165);
     font-size: 14px !important;
     font-weight: 600 !important;
@@ -116,13 +144,15 @@
 /* Service Section */
 
 .service {
+    margin-top: 5%;
+    margin-bottom: -8%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .card {
-    height: 15rem !important;
+    height: 16rem !important;
     border-radius: 5px;
     border: transparent;
     text-align: left;
@@ -130,6 +160,7 @@
 
 .card_service {
     background-color: transparent;
+    padding-bottom: 20% !important;
     background-image: linear-gradient(0deg, #01849f, #55c48b);
 }
 
@@ -141,16 +172,31 @@
     color: white;
 }
 
+.card-text {
+    margin-top: 10%;
+    /* font-size: 1.2vw; */
+    color: #aaadba;
+    font-family: 'Asab';
+}
+
 .card_ser_detail {
     border-style: solid;
-    padding-bottom: 10px !important;
-    box-shadow: 0x 8px 40px 0 rgba(0, 0, 0, .15);
+    /* background-color: red; */
+    padding-bottom: 20px !important;
     cursor: pointer;
+    box-shadow: 0x 8px 30px 0 rgb(138, 136, 136);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 8px 40px 0 rgba(0, 0, 0, .10);
     box-sizing: border-box;
 }
 
 .card_ser_detail:hover {
     border: #01849f 1px solid;
+    transform: translateY(-12px);
+    transition: ease-in-out 0.5s;
     box-shadow: 0px 8px 40px 0 rgba(7, 219, 202, 0.5);
 }
 
@@ -173,7 +219,7 @@
 /* About Section */
 
 .aboutSection {
-    padding-top: 10%;
+    padding-top: 15%;
     background-color: rgb(225, 245, 248);
     width: 100%;
     display: flex;
@@ -186,7 +232,7 @@
 }
 
 .aboutImageSection img {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -195,15 +241,31 @@
 }
 
 .aboutDetailInfo h6 {
+    margin-top: 4%;
     font-size: 15px;
     color: rgb(7, 192, 91);
 }
 
+.aboutDetailInfo h2 {
+    margin-top: 2%;
+    font-weight: 700;
+    font-size: 2.8vw;
+    line-height: 4vw;
+}
+
+.aboutDetailInfo p {
+    color: #aaadba;
+    margin-top: 4%;
+    font-size: 1.45vw;
+    line-height: 2.8vw;
+}
+
 .icon {
-    background-color: green;
-    padding: 4%;
-    margin: 0 auto;
-    width: 30%;
+    background-color: #55c48b;
+    padding: 6%;
+    text-align: center;
+    /* margin: 0 auto; */
+    width: 100%;
     border-radius: 50px;
 }
 
@@ -222,7 +284,7 @@
 
 small {
     display: block;
-    margin-left: 18%;
+    margin-left: 24%;
     font-size: 12px;
 }
 
@@ -231,7 +293,7 @@ small {
 }
 
 .iconSerDetail {
-    margin-left: 2%;
+    margin-left: 3%;
     font-size: large;
     font-weight: 630;
 }
@@ -250,14 +312,15 @@ small {
     width: 100%;
     justify-content: space-evenly;
     padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .companySubDivTwo {
-    width: 30%;
+    width: 40%;
 }
 
 .companyImgDiv {
-    width: 10%;
+    width: 15%;
 }
 
 .companyImgDiv img {
@@ -266,25 +329,57 @@ small {
 
 .companyHaed h6 {
     font-weight: 400;
-    font-size: 13px;
+    font-size: 1.2vw;
+    margin-top: 5%;
     color: rgb(57, 158, 240);
 }
 
 .companyHaed h2 {
     font-weight: 650;
+    font-size: 2.4vw;
+    margin-top: 4%;
+    width: 100%;
+}
+
+.about_copanyDetail {
+    margin-top: 20%;
+}
+
+.subcompanyDiv:hover .subcompanyinfo h1 {
+    color: #01849f;
+    font-size: 7.1vw;
+    transition: ease-in-out 0.5s;
 }
 
 .subcompanyDiv {
     display: flex;
+    margin-top: 5%;
+}
+
+.subCompanyInfo_two {
+    padding-left: 6%;
+}
+
+.subCompanyInfo_two h5 {
+    font-weight: 660;
+    font-size: 1.6vw;
+}
+
+.subCompanyInfo_two p {
+    margin-top: 4%;
+    font-size: 1.25vw;
+    color: #d6c2b9;
 }
 
 .subcompanyinfo h1 {
-    font-size: 80px;
+    font-size: 6.8vw;
     font-family: 'Mulish';
+    color: #55c48b;
 }
 
 .copamnyInfoSecondImg {
-    width: 35%;
+    margin-top: 5%;
+    width: 45%;
 }
 
 .copamnyInfoSecondImg img {
@@ -292,6 +387,11 @@ small {
 }
 
 /* Portfolio */
+
+.projectDivMain {
+    background-color: #edf6f8;
+    padding-top: 10%;
+}
 
 .center {
     display: flex;
@@ -304,8 +404,14 @@ small {
     width: 90%;
 }
 
+
+
 .btn-lg {
-    width: 20%;
+    width: 18%;
+    border-radius: 50px;
+    padding: 1.3%;
+    font-weight: 650;
+    font-size: 1.2vw;
     background-color: transparent;
     background-image: linear-gradient(90deg, #55c48b, #01849f);
     border: transparent;
@@ -315,9 +421,18 @@ small {
     margin-left: 1%;
 }
 
+.carosel_Sub {
+    margin-bottom: -10%;
+}
+
+.btn_project {
+    margin-bottom: -20%;
+}
+
 .btn_div {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 7%;
+    padding-bottom: 12%;
 }
 
 .projectImgDiv {
@@ -360,7 +475,7 @@ small {
 
 .testimonialsDiv {
     margin-top: 10%;
-    padding-top: 10%;
+    padding-top: 12%;
     padding-bottom: 15%;
     margin-bottom: 10%;
     border-top: 1px solid rgb(170, 170, 189);
@@ -384,7 +499,7 @@ small {
 .headingTestimonials h6 {
     color: rgb(1, 132, 165);
     margin-top: 4%;
-    font-family: 'Asap';
+    /* font-family: 'Asap'; */
     font-size: 14px;
     letter-spacing: 6px;
     font-weight: 700;
@@ -411,13 +526,17 @@ small {
 
 .testimonialsQuoteDiv {
     position: absolute;
-    left: 40%;
+    width: 100%;
     top: -15%;
+}
+
+.testimonialsQuoteDiv .col-5 img {
+    width: 50%;
 }
 
 .testimonial_Review_Name {
     font-weight: 490;
-    font-size: 1.2vw;
+    font-size: 19px;
     width: 100%;
     /* background-color: red; */
     margin-top: 6%;
@@ -432,7 +551,7 @@ small {
     border: transparent;
     box-shadow: 0 8px 40px 0 rgba(0, 0, 0, .15);
     border-radius: 5px;
-    font-size: 1.1vw;
+    font-size: 20px;
     color: #303030;
     font-weight: 500;
     padding: 65px 65px 70px;
@@ -441,9 +560,8 @@ small {
 
 .testimonial_avatar {
     position: absolute;
-    left: 38%;
+    width: 100%;
     top: 85%;
-    border-radius: 50%;
 }
 
 .testimonial_avatar img {
@@ -464,10 +582,17 @@ small {
     width: 100%;
 }
 
+
 .conatct_section div {
     cursor: pointer;
     opacity: 0.7;
 }
+
+.contact_section_image_div img {
+    width: 80%;
+}
+
+
 
 .conatct_section div:hover {
     opacity: 1;
@@ -482,10 +607,27 @@ small {
     border-radius: 150px;
     box-shadow: 0 8px 40px 0 rgba(0, 0, 0, .15);
     background-color: white;
-    padding: 80px 120px;
+    padding: 60px 120px;
     display: flex;
     align-items: center;
-    margin-bottom: -12%;
+    margin-bottom: -9%;
+}
+
+.contactUs_secondInfo_Div h1 {
+    font-size: 2.4vw;
+    font-weight: 700;
+}
+
+.contactUs_secondInfo_Div h1 span {
+    color: #55c48b;
+}
+
+.contactUs_secondInfo_Div h4 {
+    font-family: 'Asap';
+    font-size: 1.5vw;
+    margin-top: 2.5%;
+    font-weight: 700;
+    color: #aaadba;
 }
 
 .contactUs-btn {
@@ -496,7 +638,9 @@ small {
 
 .contactUs-btn button {
     padding: 6%;
-    width: 80%;
+    padding-left: 9%;
+    padding-right: 9%;
+    width: 85%;
     background-color: #2ba495;
     border: transparent;
     font-weight: 650;
@@ -541,7 +685,7 @@ small {
 
 .footer_list h4 {
     color: rgb(123, 124, 124);
-    font-size: 1.4vw;
+    font-size: 1.28vw;
     padding-bottom: 8%;
     border-bottom: 1px solid black;
     text-align: center;
@@ -552,8 +696,9 @@ small {
 }
 
 .footer_list_item li {
+    font-size: 1.1vw;
     list-style: none;
-    line-height: 35px;
+    line-height: 33px;
 }
 
 .footer_list_item li a {
@@ -613,4 +758,310 @@ small {
     top: 50%;
     width: 50%;
     left: 0%;
+}
+
+@media only screen and (max-width: 890px) {
+    .aboutCompany {
+        display: block;
+        /* text-align: center; */
+        width: 100%;
+        justify-content: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+
+    .companyImgDiv {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .companyImgDiv img {
+        width: 40%;
+    }
+
+    .companyHaed {
+        text-align: center;
+    }
+
+    .companyHaed h6 {
+        font-size: 20px;
+    }
+
+    .companyHaed h2 {
+        font-size: 28px;
+    }
+
+    .companySubDivTwo {
+        width: 100%;
+
+    }
+
+    .copamnyInfoSecondImg {
+        width: 100%;
+    }
+
+    .subcompanyDiv {
+        display: block;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .subcompanyinfo h1 {
+        font-size: 11vw;
+        text-align: center;
+    }
+
+    .subcompanyDiv:hover .subcompanyinfo h1 {
+        font-size: 12vw;
+        transition: ease-in-out 0.5s;
+    }
+
+    .subCompanyInfo_two {
+        padding-left: 0;
+    }
+
+    .subCompanyInfo_two h5 {
+        font-weight: 660;
+        font-size: 25px;
+    }
+
+    .subCompanyInfo_two p {
+        margin-top: 4%;
+        font-size: 18px;
+        color: #d6c2b9;
+    }
+
+    /* Project Section */
+
+    .projectImgDiv img {
+        width: 18%;
+    }
+
+    .projectHeading h6 {
+        font-size: 20px;
+    }
+
+    .projectHeading h2 {
+        font-size: 30px;
+    }
+
+    .projectHeading h5 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:961px) {
+    .projectImgDiv img {
+        width: 18%;
+    }
+
+    .projectHeading h6 {
+        font-size: 20px;
+    }
+
+    .projectHeading h2 {
+        font-size: 30px;
+    }
+
+    .projectHeading h5 {
+        font-size: 18px;
+    }
+
+    .btn_project {
+        width: 50%;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:634px) {
+    .btn_project {
+        width: 80%;
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .navbar {
+        position: block;
+        border-radius: 0px !important;
+        width: 100%;
+        box-shadow: 0px 8px 48px 0px rgba(58, 58, 58, 0.12);
+    }
+}
+
+@media only screen and (max-width:1199px) {
+    .card {
+        height: 16rem !important;
+        width: 20rem;
+        margin-top: 4%;
+    }
+
+}
+
+@media only screen and (max-width:520px) {
+    .service {
+        padding-left: 2% !important;
+    }
+}
+
+@media only screen and (max-width:744px) {
+    .iconDetail {
+        display: block;
+    }
+
+    .iconSubDetail {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .testimonialsQuoteDiv {
+        position: absolute;
+        width: 100%;
+        top: -10%;
+    }
+
+    .testimonialsQuoteDiv .col-5 img {
+        width: 80%;
+    }
+
+    .testimonial_avatar {
+        position: absolute;
+        width: 100%;
+        top: 85%;
+    }
+
+    .testimonial_avatar img {
+        border-radius: 50%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 466px){
+    .testimonialsInfoMain_Div {
+        margin-top: 5%;
+        margin-bottom: 10% !important;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .iconSerDetail {
+        font-size: small;
+    }
+
+    .testimonialsQuoteDiv {
+        position: absolute;
+        width: 100%;
+        top: -10%;
+    }
+
+    .testimonialsInfoMain_Div {
+        margin-top: 5%;
+        margin-bottom: 2% !important;
+    }
+
+    .testimonialsQuoteDiv .col-5 img {
+        width: 50%;
+    }
+
+    .testimonials_info p {
+        font-size: 18px;
+    }
+
+    .testimonial_avatar img {
+        border-radius: 50%;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .testimonialsQuoteDiv {
+        position: absolute;
+        width: 100%;
+        top: -3%;
+    }
+}
+
+@media only screen and (max-width:519px) {
+
+    .card {
+        height: 16rem !important;
+        width: 20rem;
+        margin-top: 4%;
+    }
+
+    .service {
+        margin-top: 5%;
+        margin-bottom: -8%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 961px) {
+    .main {
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+    }
+
+    .btn_works {
+        font-size: 80% !important;
+    }
+
+    .background {
+        width: 70%;
+        box-sizing: border-box;
+    }
+
+    .background img {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        object-fit: contain;
+    }
+
+    .head h5 {
+        font-size: 80%;
+    }
+
+    .head h2 {
+        font-size: 88%;
+    }
+
+    .head {
+        margin-left: 0%;
+        width: 70%;
+    }
+
+    /* Testimonials */
+
+    .testImgDiv img {
+        width: 30%;
+        display: flex;
+        justify-content: left;
+    }
+
+
+    .headingTestimonials h6 {
+        font-size: 15px;
+    }
+
+    .headingTestimonials h3 {
+        font-size: 30px;
+        margin-top: 3%;
+        font-weight: 640;
+    }
+
+    .headingTestimonials p {
+        margin-top: 5%;
+        color: rgb(170, 170, 189);
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Asap';
+    }
+
 }

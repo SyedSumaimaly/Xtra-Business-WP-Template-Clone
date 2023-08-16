@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container mainBodyDiv">
 
         <!-- Background Section -->
 
@@ -28,9 +28,9 @@
             </div>
         </div>
 
-        <!-- Navbar Section -->
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <!-- Services Section -->
+        <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand logo_achar" href="#"><img src="/Assets/logo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -68,15 +68,15 @@
                     </ul>
                     <form class="d-flex" role="search">
                         <button class="btn btn-outline-success btn_consultaton" type="submit">Free Consultation</button>
-                        </for>
+                    </form>
                 </div>
             </div>
-        </nav>
+        </nav> -->
+    </div>
 
-        <!-- Services Section -->
+    <div class="container">
 
         <div class="service">
-
             <div class="card card_service" style="width: 15rem;">
                 <div class="card-body">
                     <h5 class="card-title servicetitle">OUR SERVICES</h5>
@@ -109,7 +109,6 @@
             </div>
         </div>
     </div>
-
     <!-- About Section -->
 
     <div class="aboutSection">
@@ -187,8 +186,7 @@
         </div>
     </div>
 
-    <div class="aboutCompany">
-
+    <div class="container aboutCompany">
         <div class="companySubDivTwo">
 
             <div class="companyImgDiv">
@@ -199,12 +197,12 @@
                 <h2>Our business process road</h2>
             </div>
 
-            <div>
+            <div class="about_copanyDetail">
                 <div class="subcompanyDiv">
                     <div class="subcompanyinfo">
                         <h1>01.</h1>
                     </div>
-                    <div>
+                    <div class="subCompanyInfo_two">
                         <h5>Create an Idea</h5>
                         <p>What’s hard is to develop the habits that enable us to come up with great ideas.</p>
                     </div>
@@ -214,7 +212,7 @@
                     <div class="subcompanyinfo">
                         <h1>02.</h1>
                     </div>
-                    <div>
+                    <div class="subCompanyInfo_two">
                         <h5>Complete the Project</h5>
                         <p>You can organize yourself and your team in endless ways</p>
                     </div>
@@ -224,7 +222,7 @@
                     <div class="subcompanyinfo">
                         <h1>03.</h1>
                     </div>
-                    <div>
+                    <div class="subCompanyInfo_two">
                         <h5>Execution</h5>
                         <p>When it comes to motivating teams, awarding members for good performance.</p>
                     </div>
@@ -239,7 +237,7 @@
 
     <!-- Projects Section -->
 
-    <div>
+    <div class=" projectDivMain">
         <div class="projectImgDiv">
             <img src="Assets/presentation.png">
         </div>
@@ -249,7 +247,7 @@
             <h5>Let’s check some of our perfect projects.</h5>
         </div>`
         <div class="center">
-            <div class="container">
+            <div class="container carosel_Sub">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -305,22 +303,21 @@
                 </div>
             </div>
         </div>
-
-
-        <div class="btn_div">
-            <button type="button" class="btn btn-primary btn-lg">
-                <i class="fa-solid fa-diagram-project fa-2xs" style="color: #ffffff;"></i>
-                <span>View all recent Projects</span>
-            </button>
-        </div>
     </div>
+
+    <div class="btn_div">
+        <button type="button" class="btn btn-primary btn-lg btn_project">
+            <i class="fa-solid fa-diagram-project fa-2xs" style="color: #ffffff;"></i>
+            <span>View all recent Projects</span>
+        </button>
+    </div>
+
 
     <!-- Testimonials -->
 
     <div class="container text-center testimonialsDiv">
         <div class="row">
             <div class="col">
-
                 <div class="testImgDiv">
                     <img src="Assets/chat.png">
                 </div>
@@ -334,52 +331,67 @@
                 </div>
             </div>
             <div class="col">
-                <div class="testimonialsInfoMain_Div">
-                    <div class="testimonialsQuoteDiv">
-                        <img src="Assets/quote.png">
-                    </div>
-                    <div class="testimonials_info">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos saepe expedita
-                            omnis, iste eos mollitia facere deserunt? Officiis modi sit repellat id asperiores
-                            repellendus recusandae laudantium dolorum culpa, fugiat error.
-                        </p>
-                        <p class="testimonial_Review_Name">
-                            <span>Sarah Lee</span> Teacher
-                        </p>
-                    </div>
-                    <div class="testimonial_avatar">
-                        <img src="Assets/testimonial-1.jpg">
+                <div class="row">
+                    <div class="col testimonialsInfoMain_Div">
+                        <div class=" row testimonialsQuoteDiv">
+                            <div class="col">
+                            </div>
+                            <div class="col-5">
+                                <img src="Assets/quote.png">
+                            </div>
+                            <div class="col">
+                            </div>
+                        </div>
+                        <div class="testimonials_info">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos saepe expedita
+                                omnis, iste eos mollitia facere deserunt? Officiis modi sit repellat id asperiores
+                                repellendus recusandae laudantium dolorum culpa, fugiat error.
+                            </p>
+                            <p class="testimonial_Review_Name">
+                                <span>Sarah Lee</span> Teacher
+                            </p>
+                        </div>
+                        <div class="row testimonial_avatar">
+                            <div class="col">
+                            </div>
+                            <div class="col-5">
+                                <img src="Assets/testimonial-1.jpg">
+                            </div>
+                            <div class="col">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
     <!-- Contact Section -->
 
     <div class="container contact_section_main_div">
         <div class="conatct_section">
-            <div>
+            <div class="contact_section_image_div">
                 <img src="Assets/logo-1.jpg">
             </div>
-            <div>
+            <div class="contact_section_image_div">
                 <img src="Assets/logo-2.jpg">
             </div>
-            <div>
+            <div class="contact_section_image_div">
                 <img src="Assets/logo-3.jpg">
             </div>
-            <div>
+            <div class="contact_section_image_div">
                 <img src="Assets/logo-4.jpg">
             </div>
-            <div>
+            <div class="contact_section_image_div">
                 <img src="Assets/logo-5.jpg">
             </div>
         </div>
 
         <div class="row contact_us_secondSection">
-            <div class="col-8">
+            <div class="col-8 contactUs_secondInfo_Div">
                 <h1><span>Ready?</span> Start your own business</h1>
-                <h4>We are here to start your new project and finish is soon</h4>
+                <h4>We are here to start your new project and finish it soon</h4>
             </div>
             <div class="col-4 contactUs-btn">
                 <button class="btn btn-primary">
