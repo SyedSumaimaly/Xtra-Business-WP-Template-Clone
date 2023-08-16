@@ -890,6 +890,46 @@ small {
         width: 100%;
         box-shadow: 0px 8px 48px 0px rgba(58, 58, 58, 0.12);
     }
+
+    /* Contact Form */
+
+    .contact_us_secondSection {
+        margin-top: 10%;
+        margin: auto;
+        border-width: 1px;
+        border-color: #fff;
+        border-radius: 40px;
+        box-shadow: 0 8px 40px 0 rgba(0, 0, 0, .15);
+        background-color: white;
+        padding: 40px 60px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-bottom: -9%;
+    }
+
+    .contactUs_secondInfo_Div h1 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .contactUs_secondInfo_Div h4 {
+        font-size: 18px;
+        margin-top: 2.5%;
+        font-weight: 700;
+        color: #aaadba;
+    }
+
+    .contactUs-btn {
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: right;
+    }
+
+    .contactUs-btn button {
+        width: 85%;
+        border-radius: 10px;
+    }
 }
 
 @media only screen and (max-width:1199px) {
@@ -938,9 +978,23 @@ small {
         border-radius: 50%;
         width: 100%;
     }
+
+    /* contact Section */
+
+    .conatct_section {
+        display: block;
+        /* background-color: red; */
+        text-align: center;
+    }
+
+    .contact_section_image_div img {
+        width: 65%;
+        padding-top: 8%;
+    }
+
 }
 
-@media only screen and (max-width: 466px){
+@media only screen and (max-width: 466px) {
     .testimonialsInfoMain_Div {
         margin-top: 5%;
         margin-bottom: 10% !important;
@@ -975,6 +1029,38 @@ small {
         border-radius: 50%;
         width: 80%;
     }
+
+        /* Contact Form */
+
+        .contact_us_secondSection {
+            margin-top: 10%;
+            margin: auto;
+            border-width: 1px;
+            border-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 8px 40px 0 rgba(0, 0, 0, .15);
+            background-color: white;
+            padding: 5px 10px;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            margin-bottom: -9%;
+        }
+    
+        .contactUs-btn {
+            margin-top: auto;
+            margin-bottom: auto;
+            text-align: right;
+        }
+    
+        .contactUs-btn button {
+            width: 95%;
+            border-radius: 5px;
+        }
+    
+        .contactUs-btn button span{
+            font-size: 15px;
+        }
 }
 
 @media only screen and (max-width:320px) {
@@ -1062,6 +1148,39 @@ small {
         font-size: 18px;
         font-weight: 600;
         font-family: 'Asap';
+    }
+
+
+    /* Contact Form */
+
+    .contact_us_secondSection {
+        margin-top: 10%;
+        margin: auto;
+        border-width: 1px;
+        border-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 8px 40px 0 rgba(0, 0, 0, .15);
+        background-color: white;
+        padding: 10px 15px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-bottom: -9%;
+    }
+
+    .contactUs-btn {
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: right;
+    }
+
+    .contactUs-btn button {
+        width: 95%;
+        border-radius: 5px;
+    }
+
+    .contactUs-btn button span{
+        font-size: 15px;
     }
 
 }
