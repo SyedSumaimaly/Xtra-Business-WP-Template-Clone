@@ -9,10 +9,6 @@
     box-sizing: border-box;
 }
 
-/* body{
-    overflow-x: hidden !important;
-} */
-
 .container {
     position: relative;
 }
@@ -72,13 +68,13 @@
 
 .btn_consultaton {
     border-radius: 50px;
-    padding: 15px, 40px;
+    padding: 20px 30px;
     width: 100%;
     background-color: transparent;
     background-image: linear-gradient(90deg, #55c48b, #01849f);
     color: white;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 16px;
     box-shadow: 0px 6px 30px 0px rgba(1, 132, 159, 0.2)
 }
 
@@ -104,7 +100,6 @@
 
 .mainBodyDiv {
     width: 100%;
-    /* background-color: red; */
 }
 
 .navbar {
@@ -150,6 +145,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 
 .card {
     height: 16rem !important;
@@ -659,9 +655,10 @@ small {
 }
 
 .footerDetailPara {
-    margin-top: 5%;
+    margin-top: 4%;
+    margin-bottom: 2%;
     width: 100%;
-    font-size: 1.3vw;
+    font-size: 15pxvw;
     color: rgb(123, 124, 124);
 }
 
@@ -685,7 +682,7 @@ small {
 
 .footer_list h4 {
     color: rgb(123, 124, 124);
-    font-size: 1.28vw;
+    font-size: 17px;
     padding-bottom: 8%;
     border-bottom: 1px solid black;
     text-align: center;
@@ -696,7 +693,7 @@ small {
 }
 
 .footer_list_item li {
-    font-size: 1.1vw;
+    font-size: 14px;
     list-style: none;
     line-height: 33px;
 }
@@ -706,9 +703,6 @@ small {
     color: black;
 }
 
-.footerListMain {
-    text-align: left;
-}
 
 /* Lower Footer */
 
@@ -732,7 +726,7 @@ small {
 .lowerList {
     display: flex;
     width: 25%;
-    justify-content: space-between;
+    justify-content: space-around;
     position: absolute;
     right: 0px;
     top: 50%;
@@ -885,10 +879,18 @@ small {
 
 @media only screen and (max-width: 991px) {
     .navbar {
-        position: block;
+        position: block !important;
+        top: 0%;
         border-radius: 0px !important;
         width: 100%;
+        padding: 10px !important;
         box-shadow: 0px 8px 48px 0px rgba(58, 58, 58, 0.12);
+    }
+
+    /* Footer */
+
+    .footerListMain {
+        padding-top: 3%;
     }
 
     /* Contact Form */
@@ -941,9 +943,41 @@ small {
 
 }
 
+@media only screen and (max-width:804px) {
+    .footer_socialMediaIcon {
+        background-color: rgb(85, 196, 139);
+        padding: 3.5%;
+        border-radius: 50%;
+    }
+}
+
 @media only screen and (max-width:520px) {
     .service {
         padding-left: 2% !important;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .footerDetailPara {
+        font-size: 17px;
+    }
+
+    .logo_footer img {
+        width: 50%;
+    }
+
+    .footer_list h4 {
+        font-size: 17px;
+    }
+
+    .footer_list_item {
+        padding-left: 0;
+    }
+
+    .footer_list_item li {
+        font-size: 15px;
+        width: 100%;
+        /* background-color: red; */
     }
 }
 
@@ -987,8 +1021,12 @@ small {
         text-align: center;
     }
 
+    .conatct_section{
+        padding-bottom: 5%;
+    }
+
     .contact_section_image_div img {
-        width: 65%;
+        width: 45%;
         padding-top: 8%;
     }
 
@@ -1030,37 +1068,37 @@ small {
         width: 80%;
     }
 
-        /* Contact Form */
+    /* Contact Form */
 
-        .contact_us_secondSection {
-            margin-top: 10%;
-            margin: auto;
-            border-width: 1px;
-            border-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 8px 40px 0 rgba(0, 0, 0, .15);
-            background-color: white;
-            padding: 5px 10px;
-            display: flex;
-            width: 100%;
-            align-items: center;
-            margin-bottom: -9%;
-        }
-    
-        .contactUs-btn {
-            margin-top: auto;
-            margin-bottom: auto;
-            text-align: right;
-        }
-    
-        .contactUs-btn button {
-            width: 95%;
-            border-radius: 5px;
-        }
-    
-        .contactUs-btn button span{
-            font-size: 15px;
-        }
+    .contact_us_secondSection {
+        margin-top: 10%;
+        margin: auto;
+        border-width: 1px;
+        border-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 8px 40px 0 rgba(0, 0, 0, .15);
+        background-color: white;
+        padding: 5px 10px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-bottom: -9%;
+    }
+
+    .contactUs-btn {
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: right;
+    }
+
+    .contactUs-btn button {
+        width: 95%;
+        border-radius: 5px;
+    }
+
+    .contactUs-btn button span {
+        font-size: 15px;
+    }
 }
 
 @media only screen and (max-width:320px) {
@@ -1179,7 +1217,7 @@ small {
         border-radius: 5px;
     }
 
-    .contactUs-btn button span{
+    .contactUs-btn button span {
         font-size: 15px;
     }
 
