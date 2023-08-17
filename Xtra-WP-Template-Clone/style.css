@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Mulish&display=swap');
 /* Asap Font */
-@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
 
 * {
     margin: 0%;
@@ -16,16 +16,21 @@
 .main {
     box-sizing: border-box;
     width: 100%;
+    padding-bottom: 8%;
+    /* background-color: red; */
     display: flex;
 }
 
 .background {
     width: 100%;
+    height: 150%;
+
     box-sizing: border-box;
 }
 
 .background img {
     width: 100%;
+    height: 150% !important;
     box-sizing: border-box;
     object-fit: contain;
 }
@@ -36,18 +41,21 @@
     margin-top: 20%;
     margin-left: 10%;
     width: 50%;
-    /* padding-left: 10%; */
 }
 
 .head h5 {
     color: rgb(7, 192, 91);
+    font-size: 18px;
+    word-spacing: 4px;
+    letter-spacing: 3px;
     font-family: 'EB Garamond';
 }
 
 .head h2 {
-    font-weight: 670;
+    font-weight: 700;
     width: 100%;
-    font-size: 2.3vw;
+    padding-top: 3%;
+    font-size: 34px;
 }
 
 .head h2 span {
@@ -68,7 +76,7 @@
 
 .btn_consultaton {
     border-radius: 50px;
-    padding: 20px 30px;
+    padding: 15px 30px;
     width: 100%;
     background-color: transparent;
     background-image: linear-gradient(90deg, #55c48b, #01849f);
@@ -79,7 +87,7 @@
 }
 
 .nav-link {
-    font-weight: 620 !important;
+    font-weight: 680 !important;
 }
 
 .nav-link:hover {
@@ -87,6 +95,15 @@
     border-radius: 20px;
     background-color: rgb(235, 235, 235);
 
+}
+
+.navbar-nav {
+    width: 50%;
+}
+
+.nav-item {
+    font-size: 18px;
+    width: 100%;
 }
 
 .active {
@@ -104,10 +121,10 @@
 
 .navbar {
     position: absolute;
-    top: 3%;
+    top: 3.5%;
     background-color: red;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 1%;
     padding-right: 1%;
     /* left: 5%;
@@ -115,11 +132,12 @@
     box-sizing: border-box;
     border-radius: 70px;
     width: 100%;
-    box-shadow: 0px 8px 48px 0px rgba(58, 58, 58, 0.12);
+    box-shadow: 0px 8px 48px 0px rgba(58, 58, 58, 0.5);
 }
 
 .btn_works {
     background-color: white !important;
+    padding: 12px 30px;
     margin-top: 6%;
     color: rgb(7, 218, 165);
     font-size: 14px !important;
@@ -131,7 +149,7 @@
 
 .btn_works:hover {
     font-weight: 600 !important;
-    animation: 1.2s ease-in-out;
+    animation: 1.4s ease-in-out;
     color: white !important;
     background-color: #01849f !important;
 }
@@ -146,17 +164,32 @@
     flex-wrap: wrap;
 }
 
+.serviceDivAllMain {
+    padding-top: 10px;
+    padding-bottom: 5%;
+    padding-left: 10px;
+}
 
 .card {
-    height: 16rem !important;
+    height: 19rem !important;
     border-radius: 5px;
     border: transparent;
     text-align: left;
+    font-family: 'Asap';
+}
+
+
+.card-title {
+    font-size: 24px;
+    /* background-color: red !important; */
+    font-weight: 700;
 }
 
 .card_service {
+    padding-top: 20px !important;
+    padding-bottom: 15px !important;
+    background-color: red !important;
     background-color: transparent;
-    padding-bottom: 20% !important;
     background-image: linear-gradient(0deg, #01849f, #55c48b);
 }
 
@@ -170,23 +203,26 @@
 
 .card-text {
     margin-top: 10%;
-    /* font-size: 1.2vw; */
     color: #aaadba;
     font-family: 'Asab';
 }
 
 .card_ser_detail {
+    padding-top: 20px !important;
+    padding-bottom: 15px !important;
     border-style: solid;
-    /* background-color: red; */
-    padding-bottom: 20px !important;
     cursor: pointer;
     box-shadow: 0x 8px 30px 0 rgb(138, 136, 136);
     border-style: solid;
     border-width: 1px;
     border-color: #f4f4f4;
     border-radius: 5px;
-    box-shadow: 0 8px 40px 0 rgba(0, 0, 0, .10);
+    box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.342);
     box-sizing: border-box;
+}
+
+.card_ser_detail:hover h5 {
+    color: #55c48b;
 }
 
 .card_ser_detail:hover {
@@ -443,21 +479,25 @@ small {
 
 .projectHeading h6 {
     text-align: center;
-    margin-top: 2%;
-    font-weight: 400;
+    margin-top: 2.5%;
+    font-weight: 430;
     font-size: 14px;
+    color: #01849f;
+    letter-spacing: 5px;
 }
 
 .projectHeading h2 {
     text-align: center;
     margin-top: 1%;
     font-weight: 650;
+    font-size: 42px;
 }
 
 .projectHeading h5 {
     text-align: center;
-    margin-top: 1%;
-    font-size: 16px;
+    margin-top: 2%;
+    font-size: 20px;
+    /* font-size: 16px; */
     color: #55c48b;
     font-weight: 400;
 
@@ -472,10 +512,10 @@ small {
 .testimonialsDiv {
     margin-top: 10%;
     padding-top: 12%;
-    padding-bottom: 15%;
+    padding-bottom: 10%;
     margin-bottom: 10%;
-    border-top: 1px solid rgb(170, 170, 189);
-    border-bottom: 1px solid rgb(170, 170, 189);
+    border-top: 1px solid rgba(166, 166, 170, 0.404);
+    border-bottom: 1px solid rgba(166, 166, 170, 0.404);
 }
 
 .testImgDiv {
@@ -547,7 +587,7 @@ small {
     border: transparent;
     box-shadow: 0 8px 40px 0 rgba(0, 0, 0, .15);
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 15px;
     color: #303030;
     font-weight: 500;
     padding: 65px 65px 70px;
@@ -710,7 +750,7 @@ small {
     width: 100%;
     color: white;
     display: flex;
-    background-color: black;
+    background-color: #01849f;
     padding-bottom: 2%;
     justify-content: space-around;
     box-sizing: border-box;
@@ -1021,7 +1061,7 @@ small {
         text-align: center;
     }
 
-    .conatct_section{
+    .conatct_section {
         padding-bottom: 5%;
     }
 
